@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
 function Header() {
   const location = useLocation().pathname;
   const HeaderText = {
-    "/MyPortfolio":
+    "/MyPortfolio/":
       "Welcome to my website! I am Nika from Georgia. I hope you enjoy exploring this site",
 
     "/about": `
