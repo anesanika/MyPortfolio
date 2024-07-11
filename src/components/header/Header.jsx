@@ -8,7 +8,8 @@ import { useLocation } from "react-router-dom";
 function Header() {
   const location = useLocation().pathname;
   const HeaderText = {
-    "/": "Welcome to my website! I am Nika from Georgia. I hope you enjoy exploring this site",
+    "/MyPortfolio":
+      "Welcome to my website! I am Nika from Georgia. I hope you enjoy exploring this site",
 
     "/about": `
     Hi, I'm Nika from Georgia. I am a Front-End Developer with aspirations of becoming a Full-Stack Developer. This page is dedicated to sharing more about my background and experiences with you. Currently, I am focusing on learning Back-End development...
