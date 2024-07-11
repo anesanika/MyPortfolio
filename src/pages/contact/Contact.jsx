@@ -74,6 +74,7 @@ function Contact() {
                 onChange={(e) => setMessage(e.target.value)}
                 value={message}
                 placeholder="Type..."
+                required
               ></textarea>
             </div>
             <button type="submit">Send Message</button>
