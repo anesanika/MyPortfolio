@@ -14,7 +14,9 @@ function Project() {
   useEffect(() => {
     const featchProjects = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/projects/");
+        const response = await axios.get(
+          "https://porftolio-api.vercel.app/projects/"
+        );
         setProjects(response.data);
         setMapLoading(false);
       } catch (error) {
