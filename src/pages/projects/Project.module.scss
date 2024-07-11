@@ -1,0 +1,27 @@
+.prjectHead {
+  width: 100%;
+  h1 {
+    font-family: Azeret;
+    font-size: 40px;
+    color: #fff;
+  }
+}
+.allProjects {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 10px;
+}
+.projectFoot {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+@media (max-width: 650px) {
+  .prjectHead {
+    h1 {
+      font-size: 30px;
+    }
+  }
+}

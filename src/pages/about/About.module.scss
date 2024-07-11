@@ -1,0 +1,32 @@
+.mainAboutCont {
+  width: 100%;
+  padding: 10px;
+}
+.aboutTitle {
+  width: 100%;
+  h1 {
+    font-size: 40px;
+    color: #fff;
+    font-family: Azeret;
+  }
+}
+.aboutMain {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.aboutFoot {
+  display: flex;
+  justify-content: end;
+  padding: 50px 0;
+  gap: 10px;
+}
+
+@media (max-width: 800px) {
+  .aboutTitle {
+    h1 {
+      font-size: 30px;
+    }
+  }
+}

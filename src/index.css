@@ -1,13 +1,79 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html::-webkit-scrollbar {
+  width: 7px;
+  background-color: #1a1919;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #2c2c2c;
+  border-radius: 12px;
+}
+
+@font-face {
+  font-family: Azeret;
+  src: url(./assets/fonts/AzeretMono-Regular.ttf);
+}
+@font-face {
+  font-family: Tiny;
+  src: url(./assets/fonts/Tiny5-Regular.ttf);
+}
+
+#root {
+  margin-top: 40px;
+}
+
+.mianSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.appDiv {
+  width: 75%;
+  padding: 15px;
+}
+
+.dinamyContent {
+  margin-top: 25px;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: radial-gradient(rgb(38, 38, 38) 1px, transparent 1px),
+    radial-gradient(rgb(38, 38, 38) 1px, rgb(26, 26, 26) 1px);
+  background-position: 0px 0px, 10px 10px;
+  background-size: 20px 20px;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+.bg2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    124deg,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 30.2214%,
+    rgba(3, 3, 3, 0.493) 59.9054%,
+    rgb(0, 0, 0) 100%
+  );
+  z-index: -1;
+}
+
+@media (max-width: 1200px) {
+  .appDiv {
+    width: 100%;
+  }
+  .mianSection {
+    flex-direction: column;
+  }
 }

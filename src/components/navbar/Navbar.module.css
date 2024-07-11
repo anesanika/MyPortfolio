@@ -1,0 +1,65 @@
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  width: 100%;
+  border-radius: 50px;
+  background-color: #121212;
+}
+.mainNav .navTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainNav .navTime h2 {
+  font-family: Azeret;
+  color: #fff;
+  font-size: 17px;
+}
+
+.navLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  gap: 30px;
+}
+.navLink a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 23px;
+  color: #fff;
+  background-color: transparent;
+  transition: 0.5s;
+}
+.navLink a:last-child {
+  font-size: 20px;
+}
+.navLink a:hover {
+  background-color: rgba(255, 255, 255, 0.1843137255);
+}
+.navLink .active {
+  background-color: rgba(255, 255, 255, 0.0823529412);
+}
+
+@media (max-width: 650px) {
+  .navTime {
+    width: 100%;
+    text-align: center;
+  }
+  .navLink {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #121212;
+    padding: 15px;
+    width: 90%;
+    border-radius: 32px;
+    justify-content: space-around;
+    z-index: 100;
+  }
+}/*# sourceMappingURL=Navbar.module.css.map */

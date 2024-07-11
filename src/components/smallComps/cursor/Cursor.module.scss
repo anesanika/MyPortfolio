@@ -1,0 +1,12 @@
+.cursorOutline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffffa8;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  box-shadow: 0 0 0 3px #214ade9f;
+}

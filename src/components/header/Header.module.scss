@@ -1,0 +1,162 @@
+.header {
+  width: 25%;
+}
+.fixeDivCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 30px;
+  height: 90vh;
+  min-height: 90ch;
+  position: fixed;
+  width: 25%;
+}
+
+.headerImage {
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  img {
+    width: 70px;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+}
+
+.imageName {
+  font-family: Azeret;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  h1 {
+    color: #fff;
+    font-size: 32px;
+  }
+  p {
+    color: #cfcfcf;
+  }
+}
+.headerAbout {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px;
+  p {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    color: #b3b3b3;
+  }
+}
+.headerSocs {
+  width: 100%;
+  padding: 20px 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.headerFootText {
+  margin-top: 30px;
+  padding: 5px;
+  color: #cfcfcf;
+  h4 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+  }
+}
+
+@keyframes aboutChange {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1300px) {
+  .headerImage {
+    padding: 0;
+  }
+  .imageName {
+    h1 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  .headerAbout {
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    width: 100%;
+  }
+  .fixeDivCont {
+    position: static;
+    width: 100%;
+    min-height: 20ch;
+    height: 40ch;
+    max-height: 50ch;
+  }
+  .headerSocs {
+    justify-content: end;
+  }
+  .headerFootText {
+    display: none;
+  }
+  .headerImage {
+    img {
+      width: 100px;
+    }
+  }
+  .imageName {
+    h1 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .headerAbout {
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .headerImage {
+    img {
+      width: 60px;
+    }
+  }
+  .imageName {
+    h1 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .headerAbout {
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .fixeDivCont {
+    height: 44ch;
+  }
+}
