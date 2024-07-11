@@ -43,7 +43,7 @@ function App() {
             <AnimatePresence mode="wait">
               <Routes key={location.pathname} location={location}>
                 <Route
-                  path="/"
+                  path="/MyPortfolio"
                   element={
                     <React.Suspense fallback={<Loading />}>
                       <Home />

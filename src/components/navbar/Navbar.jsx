@@ -52,7 +52,7 @@ export const Navbar = () => {
         <NavLink
           title="Home"
           className={({ isActive }) => (isActive ? style.active : null)}
-          to="/"
+          to="MyPortfolio/"
         >
           <RiHome5Line />
         </NavLink>
