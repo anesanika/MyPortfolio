@@ -34,6 +34,8 @@
   color: #fff;
   background-color: transparent;
   transition: 0.5s;
+  mix-blend-mode: difference;
+  z-index: 1000;
 }
 .navLink a:last-child {
   font-size: 20px;

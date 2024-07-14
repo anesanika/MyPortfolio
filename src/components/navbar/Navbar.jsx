@@ -50,6 +50,7 @@ export const Navbar = () => {
       </div>
       <div className={style.navLink}>
         <NavLink
+          id="hoverable"
           title="Home"
           className={({ isActive }) => (isActive ? style.active : null)}
           to="MyPortfolio/"
@@ -57,6 +58,7 @@ export const Navbar = () => {
           <RiHome5Line />
         </NavLink>
         <NavLink
+          id="hoverable"
           title="About"
           className={({ isActive }) => (isActive ? style.active : null)}
           to="/about"
@@ -64,6 +66,7 @@ export const Navbar = () => {
           <RiSuitcaseLine />
         </NavLink>
         <NavLink
+          id="hoverable"
           title="Projects"
           className={({ isActive }) => (isActive ? style.active : null)}
           to="/projects"
@@ -71,6 +74,7 @@ export const Navbar = () => {
           <RiFolder2Line />
         </NavLink>
         <NavLink
+          id="hoverable"
           title="Contact"
           className={({ isActive }) => (isActive ? style.active : null)}
           to="/contact"
